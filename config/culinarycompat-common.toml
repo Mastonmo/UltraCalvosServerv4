@@ -1,0 +1,42 @@
+
+#Food rebalancing (Pam's HarvestCraft 2, Croptopia). Requires restart to take effect.
+[foodNerf]
+	#rebalance Pam's HarvestCraft 2 food values to 1.12.2 baseline (Thanks Pixel1011!).
+	nerfPams = false
+	#rebalance Croptopia food values to Farmer's Delight saturation levels (sat 0.3 / 0.4 raw + hearty meals, nutrition capped at 14).
+	nerfCroptopia = true
+	#strip food properties from ingredient items (butter, spices, fresh water, etc.) so they cannot be eaten.
+	inedibleIngredients = true
+	#Rebalance vanilla Minecraft food values to Pam's 1.12.2 baseline.
+	nerfMinecraft = false
+
+#Bakeware cooking in the CFB cooking table.
+[bakeware]
+	#enable use cooldown on bakeware recipes. when false, bakeware recipes craft instantly.
+	enabled = true
+	#bake duration in ticks.
+	#Range: 0 ~ 600
+	durationTicks = 80
+	#refund ingredients if the player closes the cooking table menu while a bake is in progress.
+	refundOnCancel = true
+
+#Cutting board behavior.
+[cuttingBoard]
+	#OP Netherite knife! Farmer's Delight netherite knife takes no durability damage when used on the cutting board.
+	opNetheriteKnife = true
+	#allow stacking extra items onto an occupied cutting board for multi-item cutting recipes and display.
+	#when false, only vanilla Farmer's Delight single-item cutting board behavior applies.
+	multiCutting = true
+
+#Pam's HarvestCraft 2 integration. Requires restart to take effect.
+[pamsHarvestCraft]
+	#put Pam's kitchen tools (cutting board, skillet, pot, bakeware) and their crafting recipes back in the game.
+	#they work alongside the Farmer's Delight equivalents: the cutting board counts as a knife, and any of them
+	#kept in the kitchen satisfies its Farmer's Delight counterpart. Pam's food recipes stay in the kitchen either way.
+	restorePamsTools = false
+
+#Chat notifications.
+[notifications]
+	#show a chat message on login when certain optional dependencies are missing.
+	notifyMissingDeps = false
+
